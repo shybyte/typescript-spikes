@@ -19,6 +19,7 @@ describe('protected member', () => {
     const parent = new Parent(123);
     // console.log(parent.getProtectedMember());
   });
+
   it('subclass can access protected member', () => {
     const subclass = new Subclass(123);
     assert.equal(subclass.getProtectedMember(), 123);
